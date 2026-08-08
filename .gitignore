@@ -1,2 +1,81 @@
-*.agdai
-**/MAlonzo/**
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+
+# ==========================================
+# Data & Upload Storage
+# ==========================================
+data/*
+!data/.gitkeep
+backend/data/*
+!backend/data/.gitkeep
+documents/
+!documents/.gitkeep
+uploads/
+!uploads/.gitkeep
+
+# ==========================================
+# SQLite Database Files
+# ==========================================
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+docintel.db
+
+# ==========================================
+# Python Virtual Environments & Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+.venv/
+venv/
+backend/.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ==========================================
+# Node.js & Next.js Build Artifacts
+# ==========================================
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+.vercel
+
+# ==========================================
+# IDE & Operating System Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Logs & Temporary Test Files
+# ==========================================
+*.log
+celerybeat-schedule
+celerybeat.pid
+test_*.py
+test.txt
+test.pdf
